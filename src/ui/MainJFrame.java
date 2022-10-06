@@ -49,6 +49,11 @@ public class MainJFrame extends javax.swing.JFrame {
         });
 
         jDisBtn.setText("Display");
+        jDisBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jDisBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jButtonPanelLayout = new javax.swing.GroupLayout(jButtonPanel);
         jButtonPanel.setLayout(jButtonPanelLayout);
@@ -67,7 +72,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(jCrtBtn)
                 .addGap(27, 27, 27)
                 .addComponent(jDisBtn)
-                .addContainerGap(361, Short.MAX_VALUE))
+                .addContainerGap(461, Short.MAX_VALUE))
         );
 
         splitPanel.setLeftComponent(jButtonPanel);
@@ -76,11 +81,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jWorkArea.setLayout(jWorkAreaLayout);
         jWorkAreaLayout.setHorizontalGroup(
             jWorkAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 693, Short.MAX_VALUE)
+            .addGap(0, 593, Short.MAX_VALUE)
         );
         jWorkAreaLayout.setVerticalGroup(
             jWorkAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGap(0, 698, Short.MAX_VALUE)
         );
 
         splitPanel.setRightComponent(jWorkArea);
@@ -89,7 +94,7 @@ public class MainJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPanel)
+            .addComponent(splitPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -104,6 +109,12 @@ public class MainJFrame extends javax.swing.JFrame {
         CreateJPanel createPanel = new CreateJPanel(history);
         splitPanel.setRightComponent(createPanel);
     }//GEN-LAST:event_jCrtBtnActionPerformed
+
+    private void jDisBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDisBtnActionPerformed
+        // TODO add your handling code here:
+        DisplayJPanel displayPanel = new DisplayJPanel(history);
+        splitPanel.setRightComponent(displayPanel);
+    }//GEN-LAST:event_jDisBtnActionPerformed
 
     /**
      * @param args the command line arguments
