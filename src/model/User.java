@@ -12,7 +12,7 @@ import java.awt.Image;
  */
 public class User {
     private String Name;
-    private String EmpID;
+    private int EmpID;
     private int Age;
     private String Gender;
     private String SrtDt;
@@ -23,6 +23,23 @@ public class User {
     private int CellPhnNo;
     private String emailadd;
     private Image Photo;
+    private String SendPath, img_path;
+
+    public String getSendPath() {
+        return SendPath;
+    }
+
+    public void setSendPath(String SendPath) {
+        this.SendPath = SendPath;
+    }
+
+    public String getImg_path() {
+        return img_path;
+    }
+
+    public void setImg_path(String img_path) {
+        this.img_path = img_path;
+    }
 
     public Image getPhoto() {
         return Photo;
@@ -40,11 +57,11 @@ public class User {
         this.Name = Name;
     }
 
-    public String getEmpID() {
+    public int getEmpID() {
         return EmpID;
     }
 
-    public void setEmpID(String EmpID) {
+    public void setEmpID(int EmpID) {
         this.EmpID = EmpID;
     }
 
