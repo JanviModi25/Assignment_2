@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.awt.Image;
+
 /**
  *
  * @author ADMIN
@@ -11,16 +13,24 @@ package model;
 public class User {
     private String Name;
     private String EmpID;
-    private String Age;
+    private int Age;
     private String Gender;
     private String SrtDt;
     private String Level;
     private String TeamInfo;
     private String Postitle;
     private String ContInfo;
-    private String CellPhnNo;
+    private int CellPhnNo;
     private String emailadd;
-    private String Photo;
+    private Image Photo;
+
+    public Image getPhoto() {
+        return Photo;
+    }
+
+    public void setPhoto(Image Photo) {
+        this.Photo = Photo;
+    }
 
     public String getName() {
         return Name;
@@ -38,11 +48,11 @@ public class User {
         this.EmpID = EmpID;
     }
 
-    public String getAge() {
+    public int getAge() {
         return Age;
     }
 
-    public void setAge(String Age) {
+    public void setAge(int Age) {
         this.Age = Age;
     }
 
@@ -94,11 +104,11 @@ public class User {
         this.ContInfo = ContInfo;
     }
 
-    public String getCellPhnNo() {
+    public int getCellPhnNo() {
         return CellPhnNo;
     }
 
-    public void setCellPhnNo(String CellPhnNo) {
+    public void setCellPhnNo(int CellPhnNo) {
         this.CellPhnNo = CellPhnNo;
     }
 
@@ -110,12 +120,12 @@ public class User {
         this.emailadd = emailadd;
     }
 
-    public String getPhoto() {
-        return Photo;
+    
+    
+    @Override
+    public String toString(){
+        return Name;
     }
-
-    public void setPhoto(String Photo) {
-        this.Photo = Photo;
-    }
+    
     
 }

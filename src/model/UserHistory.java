@@ -32,4 +32,8 @@ public User addNewUser(){
     history.add(newUser);
     return newUser;
 }
+
+public void deleteUser(User vs){
+    history.remove(vs);
+}
 }

@@ -25,39 +25,34 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="txtTeamInfo" max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jSrtDt" min="-2" pref="84" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtSrtDt" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jSrtDt" min="-2" pref="84" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtSrtDt" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jName" min="-2" pref="84" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtName" min="-2" pref="151" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jAge" min="-2" pref="84" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtAge" min="-2" pref="151" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jName" min="-2" pref="84" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtName" min="-2" pref="151" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jAge" min="-2" pref="84" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtAge" min="-2" pref="151" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jEmpID" min="-2" pref="84" max="-2" attributes="0"/>
                   <Component id="jGender" min="-2" pref="84" max="-2" attributes="0"/>
-                  <Component id="txtLevel" min="-2" pref="84" max="-2" attributes="0"/>
+                  <Component id="jLevel" min="-2" pref="84" max="-2" attributes="0"/>
                   <Component id="jPostitle" min="-2" pref="84" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="txtGender" min="-2" pref="151" max="-2" attributes="0"/>
                   <Component id="txtEmpID" min="-2" pref="151" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                  <Component id="txtLevel" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
                   <Component id="txtPostitle" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="233" max="32767" attributes="0"/>
@@ -111,11 +106,13 @@
                   <Component id="txtGender" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtLevel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jSrtDt" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtSrtDt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLevel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtLevel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtSrtDt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -165,7 +162,7 @@
         <Property name="text" type="java.lang.String" value="Employee ID"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtLevel">
     </Component>
     <Component class="javax.swing.JLabel" name="jAge">
       <Properties>
@@ -192,7 +189,7 @@
         <Property name="text" type="java.lang.String" value="Start Date"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtLevel">
+    <Component class="javax.swing.JLabel" name="jLevel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Level"/>
       </Properties>
